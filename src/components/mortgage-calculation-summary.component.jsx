@@ -119,13 +119,13 @@ const MortgageCalculationSummary = ({ interestDetails, mortgageDetails }) => {
               <StyledTableCell component="th" scope="row">
                 Total Cost
               </StyledTableCell>
-              <StyledTableCell align="center">
+              <StyledTableCell align="center" id="totalTermAmount">
                 {(
                   Number(interestDetails.termInterestAmount) +
                   Number(interestDetails.termPrincipleAmount)
                 ).toFixed(2)}
               </StyledTableCell>
-              <StyledTableCell align="right">
+              <StyledTableCell align="right" id="totalPeriodAmount">
                 {interestDetails.totalAmountInPeriod}
               </StyledTableCell>
             </StyledTableRow>

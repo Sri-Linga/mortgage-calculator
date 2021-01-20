@@ -37,7 +37,7 @@ describe("<MortgageCalculationSummary />", () => {
     );
   });
 
-  it("should test totalTermAmount", () => {
+  it("should test totaPeriodAmount", () => {
     expect(container.find("#totalPeriodAmount").props().children).toBe(
       "225000.00"
     );
